@@ -1,0 +1,15 @@
+# Config for running the preprocessing script which transforms the raw llm-generated 
+# postconditions into something usable with EvalPlus
+
+# Should be postcondition or code
+sampleType: postcondition 
+
+# This is true if you are using a Hydra MULTIRUN command to preprocess multiple LLM_generation runs at once
+multirun: false
+
+# Path to where the raw llm samples are housed
+samplesFolder: "llm_gen_outputs/sample_GPT4simpleWithRef"
+
+# Indicating if it is an opensource model, as in our evaluation, StarChat required more aggressive preprocessing
+# due to less standardization in model responses
+opensourceModel: false

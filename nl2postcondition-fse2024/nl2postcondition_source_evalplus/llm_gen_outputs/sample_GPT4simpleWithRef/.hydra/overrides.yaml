@@ -1,0 +1,5 @@
+- experiment=generateLLMSamples
+- experiment.temperature=0.7
+- experiment.has_reference_code=True
+- experiment.prompt_v=simple
+- api=openai

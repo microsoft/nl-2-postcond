@@ -1,0 +1,4 @@
+name: "azure"
+version: "2023-03-15-preview"
+base: "https://msrgptproxy.azurewebsites.net"
+key: "AZURE_KEY"

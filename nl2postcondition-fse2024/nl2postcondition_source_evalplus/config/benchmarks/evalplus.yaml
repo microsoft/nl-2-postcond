@@ -1,0 +1,9 @@
+name: evalplus
+
+# if run_all is true, run_range, run_start, and run_end are ignored
+run_all: true 
+run_range: false
+
+# Only one of run_only or run_except can be non-empty
+run_start: "HumanEval/1"
+run_end: "HumanEval/163"

@@ -1,0 +1,19 @@
+experiment:
+  model: gpt-4-0613
+  temperature: 0.7
+  n_model_responses: 10
+  n_per_model_call: 1
+  to_generate: postcondition
+  has_reference_code: true
+  prompt_v: simple
+  system_prompt: You are a programming assistant that generates executable python
+    only. You generate correct code, so you only generate code you are sure of. You
+    have Python comments explaining your intent when possible.
+api:
+  name: openai
+  key: OPENAI_KEY
+benchmarks:
+  name: evalplus
+  run_all: true
+  run_only: []
+  run_except: []

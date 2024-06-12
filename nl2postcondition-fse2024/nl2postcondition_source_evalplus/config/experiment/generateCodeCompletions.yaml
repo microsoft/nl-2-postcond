@@ -1,0 +1,15 @@
+model: "gpt-3-5-turbo"
+temperature: 0.9
+n_model_responses: 10
+system_prompt: "You are a programming assistant that generates executable python only. You generate correct code, so you only generate code you are sure of. You have Python comments explaining your intent when possible."
+n_per_model_call: 10
+
+# Should be one of postcondition, precondition, io, or code 
+to_generate: code
+
+gen_buggy: true
+
+# What the model has as reference to generate
+has_reference_code: false
+has_precondition: false
+has_postcondition: false

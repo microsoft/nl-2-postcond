@@ -1,0 +1,38 @@
+def bf_original(planet1, planet2):
+    """
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    """
+    planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+    if planet1 not in planets or planet2 not in planets:
+        return tuple()
+    i1, i2 = (planets.index(planet1), planets.index(planet2))
+    if i1 > i2:
+        i1, i2 = (i2, i1)
+    return tuple(planets[i1 + 1:i2])
+
+
+def bf(planet1, planet2):
+
+
+    return_value = bf_original(planet1, planet2)
+    
+    # Adding imports that might be useful for postconditions
+    import re 
+    
+    # The postcondition checks that all elements in the return_value are in the correct order of planets and are between planet1 and planet2 in the order
+    assert all(planet1 <= planet <= planet2 for planet in return_value) or all(planet2 <= planet <= planet1 for planet in return_value)
+    
+
+    return return_value

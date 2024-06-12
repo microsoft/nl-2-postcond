@@ -1,0 +1,5 @@
+defaults:
+  - experiment: generateLLMSamples
+  - api: azure
+  - benchmarks: evalplus
+

@@ -1,0 +1,16 @@
+experiment:
+  sampleType: postcondition
+  multirun: false
+  samplesFolder: llm_gen_outputs/sample_GPT4simpleWithRef
+  opensourceModel: false
+api:
+  name: azure
+  version: 2023-03-15-preview
+  base: https://msrgptproxy.azurewebsites.net
+  key: AZURE_KEY
+benchmarks:
+  name: evalplus
+  run_all: true
+  run_range: false
+  run_start: HumanEval/1
+  run_end: HumanEval/163

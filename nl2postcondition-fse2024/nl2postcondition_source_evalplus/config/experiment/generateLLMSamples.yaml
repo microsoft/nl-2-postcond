@@ -1,0 +1,25 @@
+# This is a sample config for LLM generated postconditions for evalPlus
+
+# Example usage for running with multiple prompt versions, and both the :
+
+#nohup python llm_sample_generator.py hydra.mode=MULTIRUN experiment=generateLLMSamples experiment.temperature=0.7 experiment.has_reference_code=true,false experiment.has_precondition=false experiment.prompt_v=base,simple &
+
+
+model: "gpt-3-5-turbo"
+#model: "gpt-4-0613"
+temperature: 0.7
+n_model_responses: 10
+n_per_model_call: 1
+
+# Should be one of postcondition, precondition, io, or code, input
+to_generate: postcondition
+
+# What the model has as reference to generate
+has_reference_code: true
+
+# should be base or simple
+prompt_v: base
+
+system_prompt: "You are a programming assistant that generates executable python only. You generate correct code, so you only generate code you are sure of. You have Python comments explaining your intent when possible."
+
+
