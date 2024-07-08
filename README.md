@@ -2,7 +2,7 @@
 
 This repository contains the artefacts from several works around generating and evaluating formal declarative specifications from informal/natural language intent. 
 
-- [nl2postcond (FSE'24 article)](nl2postcondition-fse2024/README.md) 
+- [nl2postcond (FSE'24 article)](nl2postcondition-fse2024) 
 
 
 ## Contributing
