@@ -1,14 +1,9 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository contains the artefacts from several works around generating and evaluating formal declarative specifications from informal/natural language intent. 
 
-As the maintainer of this project, please make a few updates:
+- [nl2postcond (FSE'24 article)](nl2postcondition-fse2024/README.md) 
 
-- Improving this README.MD file to provide a great experience.
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
 
 ## Contributing
 
