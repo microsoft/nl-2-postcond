@@ -27,10 +27,10 @@ Analysis scripts + docker container for running the nl2postcondition with EvalPl
 
 Subfolders of this repository contains their own READMEs with more detailed instructions if needed. The layout of this repository is:
 
-* `GeneratedPostconditions`: All generated postconditions analyzed in the FSE paper, along with their evaluation results and logs. Includes both EvalPlus and Defects4J results.
-* `QualitativeAnalysis`: A spreadsheet with the results of our manual analysis of a subset of EvalPlus postconditions
-* `PromptTemplates`: Contains all prompts ablations used for both EvalPlus and Defects4J. 
-* `nl2postcondition_source_evalplus`: All nl2postcondition code for the EvalPlus benchmark. Includes scripts for postcondition generation, postcondition preprocessing, and postcondition evaluation.
+* (GeneratedPostconditions)[GeneratedPostconditions/README.md]: All generated postconditions analyzed in the FSE paper, along with their evaluation results and logs. Includes both EvalPlus and Defects4J results.
+* (QualitativeAnalysis)[QualitativeAnalysis/README.md]: A spreadsheet with the results of our manual analysis of a subset of EvalPlus postconditions
+* (PromptTemplates)[PromptTemplates/README.md]: Contains all prompts ablations used for both EvalPlus and Defects4J. 
+* (nl2postcondition_source_evalplus)[nl2postcondition_source_evalplus/README.md]: All nl2postcondition code for the EvalPlus benchmark. Includes scripts for postcondition generation, postcondition preprocessing, and postcondition evaluation.
 
 Due to integration with other internal projects, the source code for the Defects4J evaluation is not yet public.
 
