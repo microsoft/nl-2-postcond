@@ -20,7 +20,7 @@ This repository contains the following:
 
 Please refer to "Dataset Structure" for more information of the dataset. 
 
-### Dataset Sources [optional]
+### Dataset Sources 
 
 We adapt the [EvalPlus code generation dataset](https://github.com/evalplus/evalplus) for the task of specification generation and evaluation. We adapt the scripts to evaluate generated specifications according to the correctness and completeness metrics as defined in the FSE'24 paper. 
 
@@ -67,7 +67,7 @@ The dataset consists of code comments (docstrings), code and tests, curated by e
 Given that the LLM generated code and specifications can be buggy, the code mutants or the specifications generated should not be trusted. Besides, given that the evaluation scripts involve executing programs, they can have unintended effects. We recommend running these scripts inside the Docker containers (including the ones provided for EvalPlus). The quality of the specifications and code mutants may not generalize beyond the benchmarks considered in the paper. 
 
 
-## Citation [optional]
+## Citation
 
 **BibTeX:**
 
