@@ -16,7 +16,7 @@ Authors:    Madeline Endres (University of Michigan)
             Saikat Chakraborty (Microsoft Research);
             Shuvendu Lahiri (Microsoft Research)
 
-A preprint of the paper is available here: https://arxiv.org/pdf/2310.01831
+A preprint of the paper is available here: [https://arxiv.org/pdf/2310.01831](https://arxiv.org/abs/2310.01831)
 
 This repository contains the following:
 
