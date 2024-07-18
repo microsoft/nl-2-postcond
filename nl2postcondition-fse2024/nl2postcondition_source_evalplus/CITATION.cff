@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: NL2Postcondition
+authors:
+  - family-names: NL2Postcondition Team
+url: https://github.com/microsoft/nl-2-postcond/
+doi: https://doi.org/10.48550/arXiv.2310.01831
+date-released: 2024-07
+license: Apache-2.0
+copyright: "Portions Copyright (c) 2024 Microsoft Corporation.""
+preferred-citation:
+  type: article
+  title: "Can Large Language Models Transform Natural Language Intent into Formal Method Postconditions?"
+  authors:
+    - family-names: Endres
+      given-names: Madeline
+    - family-names: Fakhoury
+      given-names: Sarah
+    - family-names: Chakraborty
+      given-names: Saikat
+    - family-names: Lahiri
+      given-names: Shuvendu
+  year: 2024
+  journal: "Proceedings of The ACM International Conference on the Foundations of Software Engineering (FSE)"
+  doi: https://doi.org/10.48550/arXiv.2310.01831
+  url: https://arxiv.org/pdf/2310.01831
+references:
+  - authors:
+      - family-names: EvalPlus Team
+    title: "EvalPlus"
+    doi: https://doi.org/10.48550/arXiv.2305.01210
+    url: https://github.com/evalplus/evalplus
+    date-released: 2023-05-01
+    license: Apache-2.0
