@@ -1,9 +1,9 @@
 # User intent formalization for verifier-aware languages 
 Scripts and benchmarks for the paper 
 
-Evaluating LLM-driven User-Intent Formalization for Verification-Aware Languages, Shuvendu K. Lahiri.
+__Evaluating LLM-driven User-Intent Formalization for Verification-Aware Languages__, *Shuvendu K. Lahiri*.
 https://arxiv.org/abs/2406.09757
-(Accepted to appear in FMCAD'2024 proceedings)
+(Accepted to appear in __FMCAD'2024__ proceedings)
 
 ## Installing Dafny
 Install binaries from https://github.com/dafny-lang/dafny/wiki/INSTALL
@@ -18,15 +18,13 @@ Clone the repo at commit a57ce249913c883085401e9072233852826f4e24 (HEAD -> maste
 
 `python3 eval_dafny_spec.py --dafny /home/shuvendu/dafny/Scripts/dafny --mutate 5 --file ~/dafny-synthesis/MBPP-DFY-50/test/task_id_594 --log dmp`
 
-If you leave out --file then runs a few regression test cases in examples/
-
 To run with a json file with user labels:
 
 `python3 eval_dafny_spec.py --dafny /home/shuvendu/dafny/Scripts/dafny --log dmp --mutate 5 --file ~/dafny-synthesis/MBPP-DFY-50/test/task_id_594 --user-labels-json ~/dafny-synthesis/RQs/RQ3-\[Dynamic-Few-Shot-Prompting\]/rq3-dynamic-few-shot-prompting-GPT-4-temp_0.5-verified-unverified-tagged.json`
 
 Inspect the output for the soundness and completeness for *each* test (and different mutations) and the *overall* score. 
 
-`(base) shuvendu@Shuvendu-2023:~/nl2dafny/spec_harness$ grep -e Statistics -e label dmp`
+`grep -e Statistics -e label dmp`
         
         //Each line is a test, and the vector denotes number of assertion failures for 
         //[test, test-mutation-1, ...., test-mutation-5] 
